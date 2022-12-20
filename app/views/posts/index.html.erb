@@ -12,7 +12,7 @@
         <img src="<%= post.url%>" style='width: 100%; max-height: 60vh; display: block; object-fit: contain;'>
         <div class="card-body">
           <h5 class="card-title"><%= post.title %></h5>
-          <h5 class="card-title"><%= post.content %></h5>
+          <%# <h5 class="card-title"><%= post.content %></h5> 
           <%= link_to 'Voir les détails', post_path(post), class: 'btn btn-secondaire' %>
         </div>
       </div>

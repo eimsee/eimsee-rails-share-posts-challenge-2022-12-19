@@ -6,8 +6,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new
     @comments = @post.comments
-    flash.now[:notice] = "vous avez bien commenté cet article"
   end
 
   def new
@@ -16,7 +16,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @comment = Comment.new
     @post.user = current_user
     if @post.save
       redirect_to post_path(@post)

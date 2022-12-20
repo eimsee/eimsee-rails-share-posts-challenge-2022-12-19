@@ -18,11 +18,11 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
-    @posts = Post.find(params[:post_id])
-    @comment.post = @posts
+    @post = Post.find(params[:post_id])
+    @comment.post = @post
     @comment.user = current_user
     if @comment.save!
-      redirect_to post_path(@comment.post), notice: "Vous avez bien commenté cet article"
+      redirect_to post_path(@comment.post), notice: " Votre commentaire a bien été créé"
     else
       render :new
     end
