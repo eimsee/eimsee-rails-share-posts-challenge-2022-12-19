@@ -1,1 +1,23 @@
 
+<%# <h1>Bookings#new</h1>
+<p>Find me in app/views/bookings/new.html.erb</p> %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://tse2.mm.bing.net/th?id=OIP.E5yuIRNDuz4Q1UdeumE-LAHaE6&pid=Api&P=0);">
+
+</div>
+<div class="container">
+  <div class="text-center mt-4 mb-4">
+    <h2><strong>AJOUTEZ UN NOUVEL ARTICLE</strong></h2>
+  </div>
+<div class="row justify-content-around">
+  <div class="card-center" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <%= simple_form_for(@post) do |f| %>
+      <%= f.input :title, label: "TITRE" %>
+      <%= f.input :content, label: "CONTENU" %>
+      <%= f.input :url, label: "URL" %>
+      <%= f.submit "Validez" %>
+    </ul>
+  </div>
+</div>
+<% end %>
+</div>

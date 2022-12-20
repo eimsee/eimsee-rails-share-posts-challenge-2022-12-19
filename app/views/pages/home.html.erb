@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p> %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://tse4.mm.bing.net/th?id=OIP.8G7YfPFm8P3hO1qnEo-7oAHaEU&pid=Api&P=0);">
+  <div class="container">
+    <h1><strong>COSMÉTIQUE ET VOUS?</strong></h1>
+    <p>Votre avis nous intéresse!</p>
+    <%= link_to "Créer un article", new_post_path, class: "btn btn-principal" %>
+    <%= link_to "Tous les articles", posts_path, class: "btn btn-secondaire" %>
+  </div>
+</div>
+<div class="container">
+  <div class="container d-flex justify-content-center text-center mt-5">
+    <div>
+      <h3>ARTICLES LES PLUS RÉCENTS:</h3>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://m.media-amazon.com/images/I/510YsSh1wWL._AC_SL1500_.jpg)">
+      FOND DE TEINT
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://adopt.twic.pics/media/catalog/product/l/a/lashdelirious_w_1.jpg?twic=v1)">
+      MASCARA
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://franprix.twic.pics/product-images/4005900573230_A1N1_s01?twic=v1/contain=500x500)">
+      DÉMAQUILLANT
+    </div>
+  </div>
+</div>
